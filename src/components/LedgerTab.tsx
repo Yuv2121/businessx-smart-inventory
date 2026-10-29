@@ -218,9 +218,7 @@ export default function LedgerTab({ state, update }: Props) {
       {/* Definition card */}
       <div className="rounded-xl bg-pink-500/5 border border-pink-500/20 px-4 py-3">
         <div className="text-xs text-zinc-400 leading-relaxed">
-          <span className="text-pink-400 font-medium">FIFO rule:</span> Har purchase ka apna batch banega — apni cost ke saath.
-          Sale time pe sabse purana batch pehle khareed jaata hai, aur wahi cost profit mein jaati hai.
-          Purana profit kabhi change nahi hota, kyunki kuch bhi overwrite nahi hota.
+          <span className="text-pink-400 font-medium">FIFO rule:</span> How profit is calculated (FIFO): Every purchase becomes its own batch with its own cost. When you sell, the oldest batch is used first. Profit = selling price minus the real cost of the bottles sold. The selling price is one price for the whole item. Old profit never changes when you restock at a new price, because nothing is overwritten.
         </div>
       </div>
 
